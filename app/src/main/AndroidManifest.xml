@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cc_computer.no1">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activity.Landed">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.Main">
+
+        </activity>
+        <activity android:name=".Main_viewpager">
+
+        </activity>
+        <activity android:name=".Activity.AboutME">
+
+        </activity>
+        <activity android:name=".Activity.Setting">
+
+        </activity>
+        <activity android:name=".Activity.My_Game">
+
+        </activity>
+        <activity android:name=".Activity.Edit4Name">
+
+        </activity>
+        <activity android:name=".Activity.Edit4Sex">
+
+        </activity>
+        <activity android:name=".Activity.Edit4GameTime">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:id="@+id/Lay_headPic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+            <ImageView
+                android:src="@mipmap/head"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center|top"
+                android:id="@+id/pic_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/getname"
+                    android:hint="昵称获取"
+                    android:textColor="#f00"
+                    android:textSize="25dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <!--<Button-->
+                    <!--android:id="@+id/save_Mg"-->
+                    <!--android:text="保存"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_marginEnd="10dp"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content" />-->
+                <EditText
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="10dp"
+                    android:hint="个性签名"
+                    android:id="@+id/personality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/one"
+        android:layout_below="@+id/Lay_headPic"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+            android:text="游戏跨度"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:layout_marginStart="15dp"
+            android:id="@+id/spinner_1"
+            android:entries="@array/Year"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+        </Spinner>
+        <TextView
+            android:layout_marginStart="10dp"
+            android:text="-------------"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Spinner
+            android:layout_marginStart="15dp"
+            android:id="@+id/spinner_2"
+            android:entries="@array/Year"
+            android:layout_width="100dp"
+            android:layout_height="match_parent">
+        </Spinner>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_below="@+id/one"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textColor="#000"
+            android:text="游戏总数"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:layout_marginStart="15dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_below="@+id/two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:layout_weight="0.5"
+            android:text="我的游戏"
+            android:textSize="25dp"
+            android:background="@drawable/setbar"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ListView
+            android:layout_marginTop="10dp"
+            android:layout_weight="2.5"
+            android:id="@+id/game_listview"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        </ListView>
+        <Button
+            android:layout_weight="1"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/shape1"
+            android:text="添加游戏"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+    </LinearLayout>
+
+</LinearLayout>

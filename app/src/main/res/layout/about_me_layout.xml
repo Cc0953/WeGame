@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/LY_TOP"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+           android:src="@mipmap/background_aboutme"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/setting_IB"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/setting"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </RelativeLayout>
+<LinearLayout
+    android:background="@drawable/setbar1"
+    android:layout_marginTop="10dp"
+    android:id="@+id/push"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/LY_TOP">
+    <ImageView
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/speaker"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <com.example.cc_computer.no1.MyTestView
+        android:id="@+id/house_light"
+        android:gravity="center|start"
+        android:layout_marginStart="5dp"
+        android:text="@string/push"
+        android:textColor="#ff0000"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+</LinearLayout>
+
+   <LinearLayout
+       android:layout_marginTop="25dp"
+       android:orientation="vertical"
+       android:layout_below="@+id/push"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/MycardMassage"
+           android:textColor="#000"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="10dp"
+           android:textSize="20dp"
+           android:text="我的账号"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/MyMassage"
+           android:textColor="#000"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="20dp"
+           android:text="我的消息"
+           android:textSize="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/MyRelease"
+           android:textColor="#000"
+           android:layout_marginStart="20dp"
+           android:layout_marginTop="20dp"
+           android:text="我的发布"
+           android:textSize="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+   </LinearLayout>
+</RelativeLayout>
