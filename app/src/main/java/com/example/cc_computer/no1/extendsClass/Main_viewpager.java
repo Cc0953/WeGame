@@ -22,7 +22,7 @@ public class Main_viewpager extends Activity {
     private View view1,view2,view3;
     private ViewPager viewPager;
     private List<View> list;
-    private TextView textView,textView1;
+    private TextView textView;
     private ImageButton imageButton;
     private Button button;
 
