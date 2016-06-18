@@ -4,27 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/write_Title"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/title_b1"
-            android:text="返回"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-        <Button
-            android:layout_alignParentEnd="true"
-            android:text="保存"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </RelativeLayout>
-
 
     <LinearLayout
         android:id="@+id/write_fristL"
-        android:layout_below="@+id/write_Title"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -57,7 +39,7 @@
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="时间选择" />
+            android:text="选择时间" />
             <Spinner
                 android:id="@+id/time_chose"
                 android:entries="@array/Year"
@@ -97,6 +79,8 @@
         android:layout_height="wrap_content">
         <Button
             android:id="@+id/edit_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/shape1"
             android:text="内容编辑"

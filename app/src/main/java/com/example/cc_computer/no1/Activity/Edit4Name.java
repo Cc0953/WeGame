@@ -15,11 +15,9 @@ public class Edit4Name extends Activity {
 
     private Button button;
     private EditText editText;
-    private TextView textView;
     private String s;
     SharedPreferences pref;
     SharedPreferences.Editor editor;
-    private View view;
 
 
     @Override

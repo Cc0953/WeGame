@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-
 import com.example.cc_computer.no1.R;
 
 /**
@@ -14,8 +13,8 @@ import com.example.cc_computer.no1.R;
  */
 public class Setting extends Activity{
 
-    private TextView textView1,textView2,textView3;
-    SharedPreferences preferences,preferences1,preferences2;
+    private TextView textView1,textView2,textView3,textView4;
+    SharedPreferences preferences,preferences1,preferences2,preferences3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,7 +61,19 @@ public class Setting extends Activity{
                 finish();
             }
         });
-
+        //设置个性签名
+        preferences3 = getSharedPreferences("Data",MODE_PRIVATE);
+        String Signature = preferences3.getString("signature",null);
+        textView4 = (TextView) findViewById(R.id.Signature);
+        textView4.setText(Signature);
+        textView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent3 = new Intent(Setting.this,Edit4Signature.class);
+                startActivity(intent3);
+                finish();
+            }
+        });
 
     }
 

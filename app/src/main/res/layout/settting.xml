@@ -6,25 +6,6 @@
     android:focusable="true"
     android:focusableInTouchMode="true">
 
-    <!--<RelativeLayout-->
-        <!--android:layout_weight="1"-->
-        <!--android:layout_marginTop="10dp"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp">-->
-        <!--<Button-->
-            <!--android:id="@+id/setting_return"-->
-            <!--android:text="返回"-->
-            <!--android:layout_marginStart="10dp"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content" />-->
-        <!--<Button-->
-            <!--android:text="保存"-->
-            <!--android:id="@+id/setting_save"-->
-            <!--android:layout_alignParentEnd="true"-->
-            <!--android:layout_marginEnd="10dp"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content" />-->
-    <!--</RelativeLayout>-->
     <LinearLayout
         android:orientation="vertical"
         android:layout_weight="10"
@@ -37,29 +18,13 @@
             android:layout_height="wrap_content"
             android:gravity="center">
 
-            <com.example.cc_computer.no1.CircleImageView
+            <com.example.cc_computer.no1.extendsClass.CircleImageView
                 android:id="@+id/userHeadPic"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:src="@mipmap/head"
                 />
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:text="个性签名"
-                    android:textSize="20dp"
-                    android:textColor="#000"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-                <EditText
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
 
-            </LinearLayout>
 
         </LinearLayout>
         <LinearLayout
@@ -111,6 +76,31 @@
                 android:hint="点击修改性别"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:text="个性签名:"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18dp"
+                android:hint="点击修改个性签名"
+                android:textColor="#000"
+                android:id="@+id/Signature"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
         </LinearLayout>
         <LinearLayout
             android:orientation="horizontal"

@@ -1,6 +1,6 @@
 package com.example.cc_computer.no1.Activity;
 
-import com.example.cc_computer.no1.Main_viewpager;
+import com.example.cc_computer.no1.extendsClass.Main_viewpager;
 import com.example.cc_computer.no1.R;
 import android.app.Activity;
 import android.content.Intent;

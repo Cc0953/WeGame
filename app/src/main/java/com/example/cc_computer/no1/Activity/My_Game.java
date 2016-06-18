@@ -3,6 +3,7 @@ package com.example.cc_computer.no1.Activity;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Spinner;
@@ -24,7 +25,7 @@ public class My_Game extends Activity {
     private ListView listView;
     private String[] gamename={"暗黑破坏神","英雄联盟"};
     private int[] ImagerId={R.mipmap.d,R.mipmap.lol};
-    SharedPreferences preferences;
+    SharedPreferences preferences,preferences1;
     private TextView textView;
 
     @Override
@@ -36,8 +37,13 @@ public class My_Game extends Activity {
         preferences=getSharedPreferences("Data",MODE_PRIVATE);
         String s = preferences.getString("nickname",null);
         textView= (TextView) findViewById(R.id.getname);
-
         textView.setText(s);
+        //获取个性签名
+        preferences1 = getSharedPreferences("Data",MODE_PRIVATE);
+        String s1 = preferences1.getString("signature",null);
+        EditText editText = (EditText) findViewById(R.id.personality);
+        editText.setText(s1);
+
         spinner= (Spinner) findViewById(R.id.spinner_1);
         List<Map<String,Object>> list = new ArrayList<Map<String,Object>>();
         for(int i=0;i<gamename.length;i++){
